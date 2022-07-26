@@ -219,7 +219,7 @@ h3{
 }
 .content2{
 	position: relative;
-	width: 1550px;
+	max-width: 1550px;
 	margin: auto;
 	padding-bottom:158px;
 	padding-top: 53px;
@@ -356,41 +356,94 @@ h3{
 }
 @media(max-width: 768px){
 	.content{
-		padding-left:50px ;
-		padding-right: 50px;
+		padding-left:100px ;
+		padding-right: 100px;
+		box-sizing: border-box;
 	}
 	.photo{
 		position: static;
 		margin: auto;
+		margin-bottom:50px ;
 	}
 	.left-wrapper{
 		display: block;
 		width: 100%;
+		margin: 0;
+		padding: 20px;
+		background: white;
+		box-sizing: border-box;
 	}
 	.right-wrapper{
 		display: block;
 		width: 100%;
+		float: none;
+	}
+	.right-wrapper img{
+		width: 100%;
+		border-radius: 0 0 30px 30px;
 	}
 	.line{
-		display: block;
+		display: flex;
+		justify-content: space-between;
 		width: 100%;
+		margin-bottom: 50px;
+	}
+	.line h3{
+		display: inline-block;
+	}
+	.line .circl{
+		display: inline-block;
+		margin: 0;
 	}
 	.line-2{
 		display: none;
 
 	}
+
 	.right-wrapper-final{
 		display: block;
 		width: 100%;
+		float: none;
 	}
 	.wrapper-final{
 		display: block;
 		width: 100%;
 	}
 	.contact-wrapper{
-		width: 100%;
+		width: 70%;
 	}
 	.contact-link a{
 		display: block;
+		width: 100%;
+	}
+	.content2{
+		padding-left:100px ;
+		padding-right: 100px;
+		box-sizing: border-box;
+
+	}
+	.lain{
+		display: none;
+	}
+	.button-sait{
+		margin: 20px auto;
+	}
+	.wrapper{
+		border-radius:30px 30px 0 0;
+		background: none;
+		overflow: hidden;
+	}
+	.work-title{
+		position: static;
+		text-align: center;
+	}
+	.decor{
+		display: none;
+	}
+	.left-wrapper2{
+		width: 100%;
+	}
+	.about-title-final{
+		text-align: center;
 	}
 }
